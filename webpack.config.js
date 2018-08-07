@@ -5,8 +5,8 @@ module.exports = {
     filename: "like-button.js"
   },
   module: {
-    loaders: [
-      {test: /\.js$/, loader: "babel-loader?stage=0"}
+    rules: [
+      {exclude: /(node_modules|bower_components)/, test: /\.js$/, loader: 'babel-loader'}
     ]
   }
 };
