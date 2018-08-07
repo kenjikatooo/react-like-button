@@ -6,7 +6,9 @@ module.exports = {
   },
   module: {
     rules: [
-      {exclude: /(node_modules|bower_components)/, test: /\.js$/, loader: 'babel-loader'}
+      {exclude: /(node_modules|bower_components)/, test: /\.js$/, loader: 'babel-loader',options: {
+        presets: ['react']
+      }}
     ]
   }
 };
